@@ -1,0 +1,397 @@
+/* GENERAL STYLING */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: rgb(40, 177, 131);
+  color: azure;
+  height: 45px;
+  line-height: 45px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-content: center;
+}
+
+.nav-item {
+  display: inline-block;
+  color: azure;
+  padding: 0px 30px;
+}
+
+.nav-item:hover {
+  background-color: rgb(2, 116, 78);
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  color: #fff;
+  font-size: 25px;
+  display: none;
+}
+
+/* MAIN SECTION */
+.main {
+  margin-top: 40px;
+  height: 80vh;
+  width: 100%;
+  background-image: url(back.jpg);
+  background-size: cover;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  display: flex;
+  height: inherit;
+  width: inherit;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.left-col {
+  width: 85%;
+  background-color: rgb(40, 177, 131);
+  padding: 40px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.para {
+  color: whitesmoke;
+  font-size: 15pt;
+}
+
+/* SKILLS */
+#skills {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(40, 177, 131);
+  position: relative;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.skillz {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+#skills p {
+  width: 85%;
+  margin: auto;
+  color: #ffedff;
+  font-size: 14pt;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.html::before,
+.html::after,
+.css::before,
+.css::after,
+.javascript::after,
+.javascript::before,
+.coreldraw::after,
+.coreldraw::before,
+.photoshop::after,
+.photoshop::before,
+.visualbasic::after,
+.visualbasic::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #000;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  border-radius: 20px;
+}
+
+.html::after {
+  width: 83%;
+  background: #fff;
+}
+
+.css::after {
+  width: 82%;
+  background: #fff;
+}
+
+.javascript::after {
+  width: 40%;
+  background: #fff;
+}
+
+.visualbasic::after {
+  width: 43%;
+  background: #fff;
+}
+
+.coreldraw::after {
+  width: 70%;
+  background: #fff;
+}
+
+.photoshop::after {
+  width: 65%;
+  background: #fff;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+  background: #fefefe;
+  color: rgb(40, 177, 131);
+  padding: 80px 0;
+  width: 85%;
+  margin:auto
+}
+
+#experience h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.classic {
+  display: flex;
+  min-height: 200px;
+}
+
+.job-title {
+  background: rgb(2, 116, 78);
+  padding:50px 30px;
+  color: #fff;
+  width:30%;
+  box-shadow: 0px 5px 10px 5px grey;
+  font-style: italic;
+  text-align: center;
+  z-index: 1;
+}
+
+.job-title .job_name {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.job-desc {
+  width:70%;
+  background: #fff;
+  box-shadow: 5px 5px 20px 5px #000;
+  padding:20px
+}
+
+.job-desc h3 {
+  margin-bottom: 20px;
+}
+
+.job-desc p {
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.job-desc p::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 0;
+  top: 10px;
+  background: rgb(2, 116, 78)
+}
+
+
+/* CONTACT SECTION */
+#contact {
+  background: rgb(40, 177, 131);;
+  padding: 30px 0;
+}
+
+.contact-form {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+form {
+  width: 85%;
+  margin: auto;
+}
+
+input,
+textarea,
+.contact_btn {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact_btn {
+  cursor: pointer;
+  background: rgb(24, 107, 80);
+}
+
+.contact_btn:hover {
+  background: rgb(2, 116, 78);
+}
+
+/* BACK TO TOP BUTTON */
+.topBtn {
+  background: rgb(2, 116, 78);
+  color: #fff;
+  border-radius: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  width: 100%;
+  padding: 15px;
+}
+p.foot{
+  text-align: center;
+}
+p.foot img{
+  height: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  /* NAVBAR */
+  .top-nav {
+    background: rgb(2, 116, 78);
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 3px solid #fff;
+  }
+
+  .navbar {
+    flex-direction: column;
+    margin-top: 45px;
+    background: rgb(12, 92, 64) !important;
+    height: fit-content;
+    display: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid rgb(40, 177, 131);
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 100;
+  }
+
+  .toggleClass {
+    display: flex;
+  }
+
+  /* MAIN SECTION */
+  .main {
+    height: 100vh;
+  }
+
+  .left-col {
+    width: 95%;
+    
+  padding: 30px 20px;
+  }
+
+
+  .main .name {
+    padding-bottom: 20px;
+  }
+
+  /* SKILLS SECTION */
+  #skills {
+    padding: 20px;
+  }
+
+  #skills p {
+    width: 95%;
+  }
+
+  /* EXPERIENCE SECTION */
+  #experience {
+    width: 90%;
+  }
+  
+  .classic {
+    flex-direction: column;
+  }
+  
+  .job-title {
+    width:100%;
+    box-shadow: none;
+  }
+  
+  .job-desc {
+    width:100%;
+    box-shadow: 5px 5px 20px 5px #333;
+  }
+
+  /* CONTACT SECTION */
+  #contact form {
+    width: 90%;
+  }
+
+  /* BACT TO TOP BUTTON */
+  .topBtn {
+    background: rgba(2, 116, 78, 0.837);
+    width: 50px;
+    height: 50px;
+  }
+}
